@@ -8,15 +8,24 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <form id="form" class="form">
-        <h1 id="formTitle" class="form__title">Meme generator</h1>
-        <h2 id="formSubTitle" class="form__sub-title"></h2>
-        <img id="figureImg" src="" alt="meme images" class="figure__img-meme">
-        <button id="formBtn" class="form__btn">Generate</button>
-        <label class="form__label">
-            <input id="formInput" class="input" type="text" placeholder="Sök efter din meme">
-            <ul id="formAutoCompleteList" class="form__autocomplete-list"></ul>
-        </label>
-    </form>
+    <header class="header">
+        <img class="logo" src="./assets/img/logo.png" alt="Logo image">
+        <nav class="header__navigation">
+            <!-- <li class="header__navigation-items">Meme-generator</li> -->
+            <li class="header__navigation-items">Meme generator</li>
+        </nav>
+    </header>
+    <section class="form-wrapper">
+        <form id="form" class="form">
+            <h1 id="formTitle" class="form__title">Meme generator</h1>
+            <h2 id="formSubTitle" class="form__sub-title"></h2>
+            <img id="figureImg" src="" alt="meme images" class="figure__img-meme">
+            <button id="formBtn" class="form__btn">Generate</button>
+            <label class="form__label">
+                <input id="formInput" class="input" type="text" placeholder="Sök efter din meme">
+                <ul id="formAutoCompleteList" class="form__autocomplete-list"></ul>
+            </label>
+        </form>
+    </section>
 </body>
 </html>

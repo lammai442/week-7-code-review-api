@@ -4,23 +4,59 @@
     box-sizing: border-box;
 }
 
-body {
-    background-color:rgb(203, 166, 163);
+.logo {
+    align-self: center;
+    width: 5%;
+    height: 5%;
+    border-radius: 20px;
+}
+
+.header{
+    background-color: #ffffff;
+    margin-left: 2rem;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
+}
+
+.header__navigation {
+    display: flex;
+    justify-self: space-between;
+}
+
+.header__navigation-items {
+    padding: 2rem;
+    font-size: 2rem;
+}
+
+.header__navigation-items:hover {
+    background-color: #392f2e;
+}
+
+body {
+    list-style: none;
+}
+
+.form-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url('./assets/img/background.jpg');
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
 .form {
+    margin-top: 2rem;
     padding: 1rem;
     width: 400px;
-    background-color: rgb(0, 177, 204);
+    background-color: rgb(255, 255, 255);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1rem;
-    border-radius: 5px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px 2px rgb(0, 255, 251, 0.2);
 }
 
 .figure__img-meme {
@@ -30,15 +66,18 @@ body {
 }
 
 .form__btn {
+    background: linear-gradient(90deg, #ff00ff, #0ff);
+    color: white;
     padding: 0.5rem 0;
     width: 40%;
     border-radius: 5px;
     font-size: 1.5rem;
+    border: 1px solid cyan;
     transition: border 0.3s ease-in-out;
 }
 
 .form__sub-title {
-    color: white;
+    color: rgb(0, 149, 255);
 }
 
 .input {
@@ -50,7 +89,6 @@ body {
 .form__list-item {
     padding: .7rem;
     background-color: white;
-    list-style: none;
     width: 310px;
     display: flex;
     flex-wrap: wrap;
